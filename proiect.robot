@@ -107,6 +107,72 @@ ModificareExcel
     set cell value      7   E   mare
     set cell value      8   A   Este
     set cell value      8   B   suficient!
+    create worksheet    Worksheet Adaugat 2
+	Set cell value		1 	A 	Val
+	Set cell value		2 	A 	Val2
+	Set cell value		3 	A 	Val3
+	Set cell value		4 	A 	Val4
+	Set cell value		5 	A 	Val5
+	Set cell value		6 	A 	Val6
+	Set cell value		7 	A 	Val7
+	Set cell value		8 	A 	Val8
+	Set cell value		9 	A 	Val9
+	Set cell value		10 	A 	Val10
+	Set cell value		11 	A 	Val11
+	Set cell value		12 	A 	Val12
+    create worksheet    Worksheet Adaugat 3
+    Set cell value		1 	B 	Val
+	Set cell value		2 	B 	Val2
+	Set cell value		3 	B 	Val3
+	Set cell value		4 	B 	Val4
+	Set cell value		5 	B 	Val5
+	Set cell value		6 	B 	Val6
+	Set cell value		7 	B 	Val7
+	Set cell value		8 	B 	Val8
+	Set cell value		9 	B 	Val9
+	Set cell value		10 	B 	Val10
+	Set cell value		11 	B 	Val11
+	Set cell value		12 	B 	Val12
+
+    create worksheet    Worksheet Adaugat 4
+    Set cell value		1 	B 	Val
+	Set cell value		2 	B 	Val2
+	Set cell value		3 	B 	Val3
+	Set cell value		4 	B 	Val4
+	Set cell value		5 	B 	Val5
+	Set cell value		6 	B 	Val6
+	Set cell value		7 	B 	Val7
+	Set cell value		8 	B 	Val8
+	Set cell value		9 	B 	Val9
+	Set cell value		10 	B 	Val10
+	Set cell value		11 	B 	Val11
+	Set cell value		12 	B 	Val12
+	Set cell value		1 	A 	Val
+	Set cell value		2 	A 	Val2
+	Set cell value		3 	A 	Val3
+	Set cell value		4 	A 	Val4
+	Set cell value		5 	A 	Val5
+	Set cell value		6 	A 	Val6
+	Set cell value		7 	A 	Val7
+	Set cell value		8 	A 	Val8
+	Set cell value		9 	A 	Val9
+	Set cell value		10 	A 	Val10
+	Set cell value		11 	A 	Val11
+	Set cell value		12 	A 	Val12
+
+    create worksheet    Worksheet Adaugat 5
+    Set cell value		1 	B 	Val
+	Set cell value		2 	B 	Val2
+	Set cell value		3 	B 	Val3
+	Set cell value		4 	B 	Val4
+	Set cell value		5 	B 	Val5
+	Set cell value		6 	B 	Val6
+	Set cell value		7 	B 	Val7
+	Set cell value		8 	B 	Val8
+	Set cell value		9 	B 	Val9
+	Set cell value		10 	B 	Val10
+	Set cell value		11 	B 	Val11
+	Set cell value		12 	B 	Val12
     Save Workbook
     ${coloanamodificata} =    Get cell value    2   B
 
