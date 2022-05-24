@@ -1,13 +1,15 @@
-# Template: Standard Robot Framework
+# Extragerea si prelucrarea datelor: Data.Gov.Ro [Robot Framework]
 
-Want to get started using [Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics) this is the simplest template to start from.
+Acest proiect este destinat lucrarii din cadrul orei de Practica de Specialitate.
+Acest Script se foloseste de Robot Framework, acesta incluzzand majoritar libraria Selenium.
 
-This template robot:
+Scopul Proiectului: Extragerea datelor din site-ul data.gov.ro, prelucrarea lor si incarcarea acestora intr-o baza de date.
 
-- Uses [Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics) syntax.
-- Includes all the necessary dependencies and initialization commands (`conda.yaml`).
-- Provides a simple task template to start from (`tasks.robot`).
+## Detalii Suplimentare
+Unitate de invatamant: Facultatea de Stiinte Baia Mare
+Studenti: 
+- Mocirean Andrei
+- Dancs Catalina
 
-## Learning materials
 
-- [All docs related to Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework)
+
