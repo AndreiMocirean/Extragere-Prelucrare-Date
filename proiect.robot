@@ -15,7 +15,7 @@ Library    RPA.Tables
 
 *** Tasks ***
 Descarcare Fisier
-    descarcare
+    descarcare1
 Citire si Modificare Excel
     ExtractFromExcel
     ModificareExcel
@@ -43,7 +43,367 @@ descarcare
     Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
     Sleep    2
     Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
- 
+Descarcare2
+    open chrome browser   https://data.gov.ro/   use_profile=true
+    Sleep    2
+    Maximize Browser Window
+    Sleep    2
+    Input Text    xpath://*[@id="field-main-search"]    MEN
+    Sleep    2
+    Click Button    xpath://*[@id="wrapper"]/section[1]/div/form/div/div[2]/button
+    Sleep    2
+    Click Element    xpath:/html/body/div[4]/div/div[3]/aside/section[3]/nav/ul/li[2]/a/span[1]
+    Sleep    3
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to   https://data.gov.ro/dataset/rezultate-bacalaureat-2020-sesiunea-2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to   https://data.gov.ro/dataset/rezultate-bacalaureat-2019-sesiunea-2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-bacalaureat-2018-sesiunea-ii
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-bacalaureat-2017-sesiunea-ii
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-bacalaureat-2016-sesiunea-ii
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-bacalaureat-sesiunea-i-2017
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-evaluarea-nationala-2021
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-evaluarea-nationala-2018
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultatele-examenului-de-titularizare-2014
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultatele-examenului-de-titularizare-2014
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-evaluare-nationala-2019
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-bacalaureat-sesiunea-i-2019
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-evaluare-nationala-2017
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/inscrierea-in-invatamantul-primar-2014
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-bacalaureat-2021-sesiunea-i
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-bacalaureat-2018-sesiunea-i
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/situatie-rezultate-bacalaureat-pentru-liceele-din-judetul-botosani-2014-2020
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-bacalaureat-sesiunea-i-2014
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+    go to  https://data.gov.ro/dataset/retea_scolara_specializari_2013-2014
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-bacalaureat-sesiunea-ii-2014
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultatele-la-evaluarea-nationala-2015
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/elevi-inmatriculati-anul-scolar-2020-2021
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/reteaua-scolara-2020-2021
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/reteaua-unitatilor-de-invatamant-universitar-2020-2021
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/seturi-de-date-privind-invatamantul-profesional-si-tehnic-2019
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-bacalaureat-sesiunea-i-2016
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-bacalaureat-sesiunea-ii-2015
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultate-bacalaureat-sesiunea-i-2015
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/numar-cadre-didactice-preuniversitar-per-grad-didactic-in-anul-scolar-2019-2020
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/situatia-conectare-elevi-la-internet-in-anul-scolar-2020-2021
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/situatia-conectare-cadre-didactice-la-internet-in-anul-scolar-2020-2021
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/nr-untati-de-inv-preuniv-de-stat-si-private-per-limbi-straine-pentru-anul-scolsr-2020-2021
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/nr-elevi-din-inv-preuniversitar-care-studiaza-limbi-straine-pentru-anul-scolar-2020-2021
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/numarul-total-de-studenti-inmatriculati-la-forma-de-studiu-master-la-1-ianuarie-2020
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/numarul-de-posturi-din-invatamantul-preuniversitar-de-stat-an-scolar-2020-2021
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/studenti-inmatriculati-la-forma-de-studiu-licenta-la-1-ianuarie-2020
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/retea-scolara-specializari-2019-2020
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/retea-scolara-specializari-2017-2018
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/reteaua-scolara-a-unitatilor-de-invatamant-2018-2019
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/retea-scolara-specializari-2016-2017
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/reteaua-scolara-a-unitatilor-de-invatamant-2016-2017
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/retea-scolara-specializari-2015-2016
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/reteaua-scolara-a-unitatilor-de-invatamant-2015-2016
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/rezultatele-la-evaluarea-nationala-2016
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/reteaua-scolara-a-unitatilor-de-invatamant-2014-2015
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/retea-scolara-specializari-2014-2015
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/numarul-de-cadre-didactice-per-grad-cu-contracte-de-munca-active-la-18-08-2021
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/reteaua-scolara-a-unitatilor-de-invatamant-2019-2020
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+    go to  https://data.gov.ro/dataset/seturi-de-date-privind-invatamantul-profesional-si-tehnic
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/ul/li[16]/div/h3/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/article/div/section[1]/ul/li[3]/a
+    Sleep    2
+    Click Link    xpath:/html/body/div[4]/div/div[3]/div/section/div[3]/a
+
+
     Sleep    14
     Close Browser
 
