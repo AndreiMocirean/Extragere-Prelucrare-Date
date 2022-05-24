@@ -27,7 +27,7 @@ Importare in Database
     ImportInDB
 
 *** Keywords ***
-descarcare
+descarcare1
     open chrome browser   https://data.gov.ro/   use_profile=true
     Sleep    2
     Maximize Browser Window
@@ -422,7 +422,7 @@ CreateDB
     Input Text    xpath://*[@id="text_create_db"]    baza1
     Sleep    1
     Click Button    xpath://*[@id="buttonGo"]
-ImportInDB
+ImportInDBunFisier
     Go To    http://gpanel.andreimocirean.eu/phpmyadmin
     Sleep    1
     Click Element    xpath:/html[1]/body[1]/div[1]/div[3]/div[2]/div[3]/ul[1]/li[3]/a[1]
@@ -439,6 +439,49 @@ ImportInDB
     Click Button    xpath:/html/body/div[4]/div[3]/form/div[8]/input
     Click Element    xpath:/html/body/div[1]/div[3]/div[2]/div[3]/ul/li[3]/div[4]/ul/li[2]
     Sleep    150
+ImportInDBTot
+    Go To    http://gpanel.andreimocirean.eu/phpmyadmin
+    Sleep    1
+    Click Element    xpath:/html[1]/body[1]/div[1]/div[3]/div[2]/div[3]/ul[1]/li[3]/a[1]
+    Sleep    1
+    Click Element    xpath:/html/body/div[2]/div/nav/div/ul/li[6]/a
+    Sleep    3
+    Choose File     xpath://*[@id="input_import_file"]   /Users/andrei/Documents/Test/datedeschise-specializari-2019-2020.ods
+    Sleep    2
+    Execute Javascript    window.scrollTo(0, document.body.scrollHeight)
+    Click Element       xpath:/html/body/div[4]/div[3]/form/div[6]/div[4]/div/ul/li[1]/input
+    Execute Javascript    window.scrollTo(0, document.body.scrollHeight)
+    Click Element       xpath:/html/body/div[4]/div[3]/form/div[6]/div[4]/div/ul/li[2]/input
+    Sleep    1
+    Click Button    xpath:/html/body/div[4]/div[3]/form/div[8]/input
+    Click Element    xpath:/html/body/div[1]/div[3]/div[2]/div[3]/ul/li[3]/div[4]/ul/li[2]
+        Go To    http://gpanel.andreimocirean.eu/phpmyadmin
+    Sleep    1
+    Click Element    xpath:/html[1]/body[1]/div[1]/div[3]/div[2]/div[3]/ul[1]/li[3]/a[1]
+    Sleep    1
+    Click Element    xpath:/html/body/div[2]/div/nav/div/ul/li[6]/a
+    Sleep    3
+    Choose File     xpath://*[@id="input_import_file"]   /Users/andrei/Documents/Test/date-deschise-bac-2020-sesiunea-1.ods
+    Sleep    2
+    Execute Javascript    window.scrollTo(0, document.body.scrollHeight)
+    Click Element       xpath:/html/body/div[4]/div[3]/form/div[6]/div[4]/div/ul/li[1]/input
+    Execute Javascript    window.scrollTo(0, document.body.scrollHeight)
+    Click Element       xpath:/html/body/div[4]/div[3]/form/div[6]/div[4]/div/ul/li[2]/input
+    Sleep    1
+    Click Button    xpath:/html/body/div[4]/div[3]/form/div[8]/input
+    Click Element    xpath:/html/body/div[1]/div[3]/div[2]/div[3]/ul/li[3]/div[4]/ul/li[2]
+    Choose File     xpath://*[@id="input_import_file"]   /Users/andrei/Documents/Test/date-deschise-bac-2020-sesiunea-2.ods
+    Sleep    2
+    Execute Javascript    window.scrollTo(0, document.body.scrollHeight)
+    Click Element       xpath:/html/body/div[4]/div[3]/form/div[6]/div[4]/div/ul/li[1]/input
+    Execute Javascript    window.scrollTo(0, document.body.scrollHeight)
+    Click Element       xpath:/html/body/div[4]/div[3]/form/div[6]/div[4]/div/ul/li[2]/input
+    Sleep    1
+    Click Button    xpath:/html/body/div[4]/div[3]/form/div[8]/input
+    Click Element    xpath:/html/body/div[1]/div[3]/div[2]/div[3]/ul/li[3]/div[4]/ul/li[2]
+
+    Sleep    150
+
 
 ExtractFromExcel
     Open Workbook    /Users/andrei/Documents/Test/datedeschise-specializari-2019-2020.xls
@@ -538,6 +581,7 @@ ModificareExcel
 
     Log      Aceasta valoare a fost schimbata in "${coloanamodificata}"
 
+
 ConvertireExcelInODSbuna
     open chrome browser   https://www.convertfiles.com/convert/document/XLSX-to-ODS.html    use_profile=true
     maximize browser window
@@ -550,14 +594,4 @@ ConvertireExcelInODSbuna
     click link  xpath:/html/body/div[2]/div[1]/div/div/div/div[2]/div[2]/div[1]/div/div/a[1]
     Sleep   14
     close browser
-
-ConvertireExcelInODS
-    Open Available Browser       https://conversiontools.io/convert/excel-to-ods
-    Sleep   500
-    Choose File    xpath://*[@id="file"]    /Users/andrei/Downloads/datedeschise-specializari-2019-2020.xls
-    Click Element    xpath:/html/body/div[1]/div[4]/div[2]/div[2]/div/div[2]/div/div/div[3]/div[3]/button
-    Wait Until Element Is Visible    xpath://*[@id="app"]/div[4]/div[2]/div[2]/div/div[2]/div/div/div[4]/div[3]/button     timeout=60
-    Click Button When Visible       xpath://*[@id="app"]/div[4]/div[2]/div[2]/div/div[2]/div/div/div[4]/div[3]/button
-    Sleep    100
-    Click Button    xpath:/html/body/div[2]/div[1]/div/div/div/div[2]/div[2]/div[1]/div/div/div[1]/form/div[4]/div/div/input
 
